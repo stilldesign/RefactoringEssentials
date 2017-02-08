@@ -57,7 +57,7 @@ namespace RefactoringEssentials
                     case SyntaxKind.FieldDeclaration:
                     case SyntaxKind.VariableDeclaration:
                     case SyntaxKind.LocalDeclarationStatement:
-                        return char.ToLower(baseName[0]).ToString() + baseName.Substring(1);
+                        return "_" + char.ToLower(baseName[0]).ToString() + baseName.Substring(1);
 
                 }
                 return baseName;
